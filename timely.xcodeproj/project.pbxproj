@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2BACC104260D401800C6A534 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BACC103260D401800C6A534 /* AddTaskViewController.swift */; };
-		2BACC109260D411500C6A534 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BACC108260D411500C6A534 /* Task.swift */; };
+		2BCBC352261754AD0021D975 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCBC351261754AD0021D975 /* AddTaskViewController.swift */; };
+		2BCBC35A261773A50021D975 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCBC359261773A50021D975 /* Task.swift */; };
+		2BCBC362261773BE0021D975 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCBC361261773BE0021D975 /* ViewController.swift */; };
+		2BCBC368261778870021D975 /* ToDoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCBC366261778870021D975 /* ToDoCell.swift */; };
+		2BCBC369261778870021D975 /* ToDoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BCBC367261778870021D975 /* ToDoCell.xib */; };
+		2BCBC3742617B8C80021D975 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCBC3732617B8C80021D975 /* CheckBox.swift */; };
 		2BCC92BB260BF48D00C87D19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCC92BA260BF48D00C87D19 /* AppDelegate.swift */; };
 		2BCC92BD260BF48D00C87D19 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCC92BC260BF48D00C87D19 /* SceneDelegate.swift */; };
-		2BCC92BF260BF48D00C87D19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCC92BE260BF48D00C87D19 /* ViewController.swift */; };
 		2BCC92C2260BF48D00C87D19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BCC92C0260BF48D00C87D19 /* Main.storyboard */; };
 		2BCC92C4260BF48F00C87D19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BCC92C3260BF48F00C87D19 /* Assets.xcassets */; };
 		2BCC92C7260BF48F00C87D19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BCC92C5260BF48F00C87D19 /* LaunchScreen.storyboard */; };
@@ -37,12 +40,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2BACC103260D401800C6A534 /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
-		2BACC108260D411500C6A534 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		2BCBC351261754AD0021D975 /* AddTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
+		2BCBC359261773A50021D975 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		2BCBC361261773BE0021D975 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2BCBC366261778870021D975 /* ToDoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoCell.swift; sourceTree = "<group>"; };
+		2BCBC367261778870021D975 /* ToDoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToDoCell.xib; sourceTree = "<group>"; };
+		2BCBC3732617B8C80021D975 /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		2BCC92B7260BF48D00C87D19 /* timely.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = timely.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BCC92BA260BF48D00C87D19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BCC92BC260BF48D00C87D19 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2BCC92BE260BF48D00C87D19 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2BCC92C1260BF48D00C87D19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2BCC92C3260BF48F00C87D19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BCC92C6260BF48F00C87D19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -103,15 +109,18 @@
 		2BCC92B9260BF48D00C87D19 /* timely */ = {
 			isa = PBXGroup;
 			children = (
+				2BCBC361261773BE0021D975 /* ViewController.swift */,
+				2BCBC359261773A50021D975 /* Task.swift */,
+				2BCBC351261754AD0021D975 /* AddTaskViewController.swift */,
 				2BCC92BA260BF48D00C87D19 /* AppDelegate.swift */,
 				2BCC92BC260BF48D00C87D19 /* SceneDelegate.swift */,
-				2BCC92BE260BF48D00C87D19 /* ViewController.swift */,
-				2BACC103260D401800C6A534 /* AddTaskViewController.swift */,
 				2BCC92C0260BF48D00C87D19 /* Main.storyboard */,
 				2BCC92C3260BF48F00C87D19 /* Assets.xcassets */,
 				2BCC92C5260BF48F00C87D19 /* LaunchScreen.storyboard */,
 				2BCC92C8260BF48F00C87D19 /* Info.plist */,
-				2BACC108260D411500C6A534 /* Task.swift */,
+				2BCBC366261778870021D975 /* ToDoCell.swift */,
+				2BCBC367261778870021D975 /* ToDoCell.xib */,
+				2BCBC3732617B8C80021D975 /* CheckBox.swift */,
 			);
 			path = timely;
 			sourceTree = "<group>";
@@ -237,6 +246,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BCBC369261778870021D975 /* ToDoCell.xib in Resources */,
 				2BCC92C7260BF48F00C87D19 /* LaunchScreen.storyboard in Resources */,
 				2BCC92C4260BF48F00C87D19 /* Assets.xcassets in Resources */,
 				2BCC92C2260BF48D00C87D19 /* Main.storyboard in Resources */,
@@ -264,11 +274,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BCC92BF260BF48D00C87D19 /* ViewController.swift in Sources */,
-				2BACC104260D401800C6A534 /* AddTaskViewController.swift in Sources */,
-				2BACC109260D411500C6A534 /* Task.swift in Sources */,
+				2BCBC368261778870021D975 /* ToDoCell.swift in Sources */,
+				2BCBC362261773BE0021D975 /* ViewController.swift in Sources */,
 				2BCC92BB260BF48D00C87D19 /* AppDelegate.swift in Sources */,
+				2BCBC3742617B8C80021D975 /* CheckBox.swift in Sources */,
+				2BCBC35A261773A50021D975 /* Task.swift in Sources */,
 				2BCC92BD260BF48D00C87D19 /* SceneDelegate.swift in Sources */,
+				2BCBC352261754AD0021D975 /* AddTaskViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
