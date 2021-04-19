@@ -1,0 +1,6 @@
+framework module Pods_timely_timelyUITests {
+  umbrella header "Pods-timely-timelyUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

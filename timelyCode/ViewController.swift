@@ -9,6 +9,7 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, AddTaskDelegate, completeTaskDelegate {
 
+
     private let table: UITableView = {
         let table = UITableView()
         //table.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
@@ -33,6 +34,7 @@ class ViewController: UIViewController, UITableViewDataSource, AddTaskDelegate, 
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add,
                                                             target: self,
                                                             action: #selector(tappedAdd))
+    
     }
     
     @objc private func tappedAdd() {
@@ -61,7 +63,7 @@ class ViewController: UIViewController, UITableViewDataSource, AddTaskDelegate, 
             taskDescription.text = currTask.description
         }
         
-        let toggled :Bool = didToggle((cell.viewWithTag(3) as? UIButton)!)
+        let toggled :Bool = didToggle((cell.viewWithTag(3) as? CheckBox)!)
         
         if toggled {
             currTask.isDone = true;
@@ -93,7 +95,7 @@ class ViewController: UIViewController, UITableViewDataSource, AddTaskDelegate, 
         }
     }
     
-    func didToggle(_ checkmark: UIButton) -> Bool {
+    func didToggle(_ checkmark: CheckBox) -> Bool {
         //let cell = table.dequeueReusableCell(withIdentifier: "ToDoCell", for: indexPath)
         return checkmark.isSelected
     }

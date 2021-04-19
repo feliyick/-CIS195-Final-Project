@@ -16,18 +16,14 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="88"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WGX-0I-OWV">
+                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WGX-0I-OWV" customClass="CheckBox" customModule="timely">
                         <rect key="frame" x="16" y="33" width="24" height="22"/>
                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                         <size key="titleShadowOffset" width="1" height="0.0"/>
                         <state key="normal" image="checkmark.square" catalog="system">
                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
                         </state>
-                        <connections>
-                            <action selector="checkBox:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="8Kg-OE-nt1"/>
-                            <action selector="checkBoxTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="kHp-5J-pzj"/>
-                            <action selector="tappedCheckbox:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="eU4-fc-l9u"/>
-                        </connections>
+                        <state key="selected" backgroundImage="checkmark.square.fill" catalog="system"/>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cIz-mX-phV">
                         <rect key="frame" x="55" y="11" width="249" height="24"/>
@@ -56,5 +52,6 @@
     </objects>
     <resources>
         <image name="checkmark.square" catalog="system" width="128" height="114"/>
+        <image name="checkmark.square.fill" catalog="system" width="128" height="114"/>
     </resources>
 </document>
